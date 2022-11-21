@@ -49,7 +49,6 @@ const CreateIssueView = () => {
 
           <div>
             <label className="form-label text-color" htmlFor="id">Kund</label>
-            {/* <input type="text" name="id" id="id" className="form-control" onChange={e => setCustomerId(e.target.value)} value={customerId} required/> */}
             <select  className="form-control" onChange={(e) => setCustomerId(e.target.value)}>
               <option value={1} selected disabled> Ange en kund</option>
               {customers.map(customer => <option key={customer.id} value={customer.id}> {customer.firstName} {customer.lastName} </option>)}
