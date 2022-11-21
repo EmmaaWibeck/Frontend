@@ -15,6 +15,12 @@ html, body {
   display: flex;
   justify-content: flex-end;
 }
+.pb {
+  padding-bottom: 2rem;
+}
+.mt {
+  margin-top: 1rem;
+}
 
 /* NAVBAR STYLING */
 .navbar {
@@ -63,7 +69,7 @@ html, body {
 }
 .issue h2 {
   color: orange;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 .issue h2::first-letter{
   text-transform: uppercase;
@@ -71,6 +77,20 @@ html, body {
 .issue p::first-letter{
   text-transform: uppercase;
 }
+
+.sub-status {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.g-color {
+  color: #aaaaaa;
+}
+.border-b {
+  border-bottom: 1px solid #333;
+}
+
 
 /* CREATE ISSUE */
 
@@ -108,3 +128,4 @@ html, body {
   cursor: pointer;
   text-transform: uppercase;
 }
+
