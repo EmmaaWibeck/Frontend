@@ -28,6 +28,14 @@ const issuesReducer = ( state = initState, action ) => {
         error: action.payload
       }
 
+    case actiontypes().issues.addNewIssue:
+      return {
+        ...state,
+        data: [...state.data, action.payload],
+        loading: false,
+        error: null
+      }
+
     default:
       return state
   }

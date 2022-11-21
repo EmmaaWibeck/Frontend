@@ -10,7 +10,7 @@ const IssuesView = () => {
 
   useEffect (() => {
     dispatch(getIssues())
-  }, [])
+  }, [dispatch])
 
 
   return (
